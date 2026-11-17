@@ -1,0 +1,45 @@
+
+
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Online Shop",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++17",
+                "-Wall",
+                "-Wextra",
+                "-g3",
+                "-I",
+                "${workspaceFolder}/include",
+                "${workspaceFolder}/main.cpp",
+                "${workspaceFolder}/src/ShopApp.cpp",
+                "${workspaceFolder}/src/Product.cpp",
+                "${workspaceFolder}/src/Inventory.cpp",
+                "${workspaceFolder}/src/User.cpp",
+                "${workspaceFolder}/src/Customer.cpp",
+                "${workspaceFolder}/src/Admin.cpp",
+                "${workspaceFolder}/src/AuthService.cpp",
+                "${workspaceFolder}/src/Cart.cpp",
+                "${workspaceFolder}/src/CartItem.cpp",
+                "${workspaceFolder}/src/Order.cpp",
+                "${workspaceFolder}/src/OrderItem.cpp",
+                "${workspaceFolder}/src/FileManager.cpp",
+                "-o",
+                "${workspaceFolder}/output/main"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
+}

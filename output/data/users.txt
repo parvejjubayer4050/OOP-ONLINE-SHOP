@@ -1,0 +1,2 @@
+U001,admin,admin123,admin
+U002,juba,124,customer
